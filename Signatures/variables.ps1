@@ -207,7 +207,7 @@ $ReplaceHash['$CurrentUserTelephone-prefix-noempty$'] = $(
     else {
         $(
             if ($UseHtmTemplates) { '<br>' }
-            else { "`r`n" } #carrage return with new-line "`r`n" is smaller than a new line "`n"
+            else { [CHAR]11 } #carrage return with new-line "`r`n" is smaller than a new line "`n" - or try [CHAR]11
         )
     }
 )
@@ -216,7 +216,7 @@ $ReplaceHash['$CurrentUserMobile-prefix-noempty$'] = $(
     else {
         $(
             if ($UseHtmTemplates) { '<br>' }
-            else { "`r`n" } #carrage return with new-line "`r`n" is smaller than a new line "`n"
+            else { [CHAR]11 } #carrage return with new-line "`r`n" is smaller than a new line "`n" - or try [CHAR]11
         )
     }
 )
